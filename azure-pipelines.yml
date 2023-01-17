@@ -75,7 +75,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<ResourceManagerCalculator>'
+    azureSubscription: 'AzureCalculatorManager'
     appName: '<Name of web app>'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     
