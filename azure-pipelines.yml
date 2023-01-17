@@ -74,14 +74,14 @@ steps:
     condition: succeededOrFailed()
     
 
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: |
-      **/*
-      !.git/**/*
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+#- task: CopyFiles@2
+#  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+#  inputs:
+#    SourceFolder: '$(Build.SourcesDirectory)'
+#    Contents: |
+#      **/*
+#      !.git/**/*
+#    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 
 #  variables:
