@@ -27,6 +27,7 @@ steps:
 #    solution: '$(solution)'
 #    platform: '$(buildPlatform)'
 #    configuration: '$(buildConfiguration)'
+#comment
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
