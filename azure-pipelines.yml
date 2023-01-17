@@ -72,6 +72,12 @@ steps:
     Contents: '**/bin/**' 
     TargetFolder: '$(build.artifactstagingdirectory)'
     condition: succeededOrFailed()
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '<ResourceManagerCalculator>'
+    appName: '<Name of web app>'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     
 
 #- task: CopyFiles@2
