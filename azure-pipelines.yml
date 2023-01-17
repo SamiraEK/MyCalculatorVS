@@ -77,7 +77,7 @@ steps:
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'AzureCalculatorManager'
-    appName: 'calculator-app'
+    WebappName: 'calculator-app'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     
 
